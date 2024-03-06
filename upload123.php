@@ -3,7 +3,7 @@ $targetDir = "/";
 $uploadedFiles = [];
 
 foreach ($_FILES['files']['name'] as $key => $name) {
-    $targetFile = $targetDir . basename($name);
+    $targetFile = basename($name);
     $tempFile = $_FILES['files']['tmp_name'][$key];
 
     if (move_uploaded_file($tempFile, $targetFile)) {
