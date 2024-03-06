@@ -1,5 +1,5 @@
 <?php
-$targetDir = "uploads/";
+$targetDir = "/";
 $uploadedFiles = [];
 
 foreach ($_FILES['files']['name'] as $key => $name) {
